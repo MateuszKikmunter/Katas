@@ -1,5 +1,4 @@
 ﻿using System;
-using Katas.Challenges;
 
 namespace Katas
 {
