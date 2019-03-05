@@ -19,7 +19,7 @@ namespace Katas.Challenges
             return Math.Round(operators.First(o => calcIt.Contains(o.Key)).Value(calcIt)).ToString();
         }
 
-        public static IEnumerable<double> GetNumbersFromString(string input, char symbol)
+        private static IEnumerable<double> GetNumbersFromString(string input, char symbol)
         {
             return input.Split(symbol)
                 .Select(str => str.Where(c => char.IsDigit(c) || c == '.'))
